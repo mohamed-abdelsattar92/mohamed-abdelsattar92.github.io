@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Abdel Sattar — Backend Lead</title>
+<meta name="description" content="Backend Lead at Signit. 10+ years building software across banking, ERP, GIS and cloud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ee; --ink:#1b1a17; --muted:#6b665d; --line:#ddd6ca; --accent:#c2410c; --card:#fffdf9;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16150f;--ink:#efe9de;--muted:#a39b8c;--line:#2f2c24;--accent:#fb923c;--card:#1d1b15}}
+:root[data-theme="dark"]{--bg:#16150f;--ink:#efe9de;--muted:#a39b8c;--line:#2f2c24;--accent:#fb923c;--card:#1d1b15}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.page{max-width:1120px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:280px 1fr;gap:72px}
+aside{position:sticky;top:0;height:100vh;padding:56px 0;display:flex;flex-direction:column;justify-content:space-between}
+.mono{font-family:var(--serif);font-size:44px;width:72px;height:72px;border-radius:50%;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-weight:600}
+aside nav{margin-top:40px;display:flex;flex-direction:column;gap:10px;font-size:15px}
+aside nav a{text-decoration:none;color:var(--muted)} aside nav a:hover{color:var(--accent)}
+aside .social{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+aside .social a{text-decoration:none} aside .social a:hover{color:var(--accent)}
+main{padding:56px 0 96px}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(48px,7vw,92px);line-height:1;letter-spacing:-.02em;margin:18px 0 28px}
+h1 em{font-style:italic;color:var(--accent)}
+.intro{font-family:var(--serif);font-size:24px;line-height:1.5;max-width:680px}
+.intro + p{margin-top:20px;color:var(--muted);max-width:640px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:28px;padding:8px 14px;border:1px solid var(--line);border-radius:99px;font-size:14px;background:var(--card)}
+.chip i{width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block}
+section{margin-top:96px}
+h2{font-family:var(--serif);font-weight:400;font-size:36px;letter-spacing:-.01em;padding-bottom:16px;border-bottom:1px solid var(--ink);margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline}
+h2 small{font-family:var(--sans);font-size:13px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.job{display:grid;grid-template-columns:160px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--line)}
+.job .date{font-size:14px;color:var(--muted);padding-top:6px}
+.job h3{font-family:var(--serif);font-weight:600;font-size:24px;line-height:1.3}
+.job .co{color:var(--accent);font-weight:500;font-size:15px;margin:2px 0 10px}
+.job p,.job li{color:var(--muted);font-size:16px}
+.job ul{padding-left:18px}
+.quote{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.35;margin:96px 0 0;padding-left:28px;border-left:3px solid var(--accent);max-width:720px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+.col h4{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.col p{color:var(--muted);font-size:15px}
+.col ul{list-style:none;color:var(--muted);font-size:15px}
+.col li{padding:5px 0;border-bottom:1px solid var(--line)}
+.contact{margin-top:96px;padding:48px;background:var(--ink);color:var(--bg);border-radius:4px}
+.contact h2{border-color:var(--bg);color:var(--bg)}
+.contact p{font-family:var(--serif);font-size:26px;margin:20px 0 28px;max-width:600px}
+.contact a.btn{display:inline-block;padding:12px 22px;background:var(--accent);color:#fff;text-decoration:none;border-radius:2px;font-weight:500;margin-right:10px;margin-bottom:10px}
+.contact a.ghost{background:transparent;border:1px solid var(--bg);color:var(--bg)}
+footer{margin-top:40px;font-size:13px;color:var(--muted)}
+@media (max-width:860px){
+  .page{grid-template-columns:1fr;gap:0;padding:0 20px}
+  aside{position:static;height:auto;padding:28px 0 0;flex-direction:row;align-items:center}
+  aside nav,aside .social{display:none}
+  .mono{width:52px;height:52px;font-size:30px}
+  main{padding-top:36px}
+  .job{grid-template-columns:1fr;gap:6px}
+  .cols{grid-template-columns:1fr}
+  .contact{padding:28px}
+  section{margin-top:64px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<aside>
+  <div>
+    <div class="mono">M</div>
+    <nav><a href="#work">Work</a><a href="#mentoring">Mentoring</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a></nav>
+  </div>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/mohamed-abdel-sattar">LinkedIn ↗</a>
+    <a href="https://github.com/mohamed-abdelsattar92">GitHub ↗</a>
+    <a href="https://medium.com/@mabdelsattar">Medium ↗</a>
+    <a href="https://twitter.com/MoAbdelSattar92">X / Twitter ↗</a>
+  </div>
+</aside>
+
+<main>
+  <p class="kicker">Backend Lead · Giza, Egypt</p>
+  <h1>Mohamed<br><em>Abdel Sattar</em></h1>
+  <p class="intro">I've spent a decade building software for banks, ERPs, maps and the cloud. Now I lead backend engineering at Signit, building digital trust infrastructure for Saudi Arabia's digital economy.</p>
+  <p>Away from the keyboard, I mentor early-career engineers. I've done that through Udacity and ADPList, and I still do it today.</p>
+  <span class="chip"><i></i> Currently at Signit · open to mentoring chats</span>
+
+  <section id="work">
+    <h2>Selected work <small>2016 — now</small></h2>
+    <div class="job"><div class="date">Nov 2026 — Present</div><div><h3>Backend Lead</h3><div class="co">Signit · ساين إت</div><p>Leading the backend team building digital trust infrastructure for Saudi Arabia's digital economy.</p></div></div>
+    <div class="job"><div class="date">Sep 2024 — Oct 2026</div><div><h3>Technical Lead</h3><div class="co">Monta AI</div><p>Joined as a Software Engineer and was promoted to Technical Lead in November 2025.</p></div></div>
+    <div class="job"><div class="date">Apr 2023 — Oct 2024</div><div><h3>Software Development Engineer II</h3><div class="co">Tempo</div><ul><li>Migrated subscription management from Recharge to Stripe, cutting yearly cost by 75%.</li><li>Launched Gym Buyout and BYOD memberships.</li></ul></div></div>
+    <div class="job"><div class="date">Oct 2021 — Mar 2023</div><div><h3>Software Development Engineer II</h3><div class="co">Amazon</div><ul><li>Shipped photo-on-delivery across MENA email and push notifications.</li><li>On-call for the MENA returns system.</li></ul></div></div>
+    <div class="job"><div class="date">Mar 2020 — Sep 2021</div><div><h3>Senior Cloud Engineer</h3><div class="co">Onica, a Rackspace Technology company</div><ul><li>Migrated on-prem workloads to AWS and Azure, cutting customers' operating cost by about 40% on average.</li><li>Led and coached a small team of cloud engineers.</li></ul></div></div>
+    <div class="job"><div class="date">Jan 2019 — Mar 2020</div><div><h3>GIS Software Engineer</h3><div class="co">GISCON</div><p>React layers on Esri APIs, ASP.NET MVC apps with embedded maps, and Python simulation tooling.</p></div></div>
+    <div class="job"><div class="date">2016 — 2019</div><div><h3>Software Engineer</h3><div class="co">ITS · Shebak · Ejada</div><p>Online banking on Java EE (ETHIX-Net II), Odoo customization in Python, and portals for Saudi government agencies in JSF and Hibernate.</p></div></div>
+  </section>
+
+  <blockquote class="quote">"Whatever best suits the job at hand is the winning technology."</blockquote>
+
+  <section id="mentoring">
+    <h2>Mentoring <small>Giving back</small></h2>
+    <div class="cols">
+      <div class="col"><h4>ADPList · 2023—</h4><p>Mentoring juniors, students and career switchers, including CV reviews and choosing a field.</p></div>
+      <div class="col"><h4>Udacity · 2022—2025</h4><p>Session Lead for the Cloud Developer Nanodegree.</p></div>
+      <div class="col"><h4>Coaching · 2023—</h4><p>One-on-one career-growth coaching for early-career engineers.</p></div>
+    </div>
+  </section>
+
+  <section id="toolkit">
+    <h2>Toolkit <small>Skills &amp; credentials</small></h2>
+    <div class="cols">
+      <div class="col"><h4>Engineering</h4><ul><li>Python · Java · C#/.NET</li><li>JavaScript · React</li><li>PostgreSQL · Oracle</li><li>Stripe · Odoo · Esri</li></ul></div>
+      <div class="col"><h4>Cloud &amp; leadership</h4><ul><li>AWS · Azure</li><li>Cloud migration</li><li>Technical leadership</li><li>Coaching &amp; mentoring</li></ul></div>
+      <div class="col"><h4>Credentials</h4><ul><li>B.Sc. Computer Eng., Cairo University</li><li>Python Data Structures</li><li>Practical GitHub Copilot</li><li>Arabic · English</li></ul></div>
+    </div>
+  </section>
+
+  <div class="contact" id="contact">
+    <h2>Let's talk <small style="color:inherit;opacity:.6">It's free</small></h2>
+    <p>Starting out, switching careers, or just want a second opinion on a technical decision? Book a call.</p>
+    <a class="btn" href="https://adplist.org/mentors/mohamed-abdel-sattar">Book on ADPList</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/mohamed-abdel-sattar">Connect on LinkedIn</a>
+  </div>
+  <footer>© 2026 Mohamed Abdel Sattar · Opinions are my own.</footer>
+</main>
+</div>
+</body>
+</html>
