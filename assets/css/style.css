@@ -155,6 +155,25 @@ img{display:block;max-width:100%;height:auto}
 
 .foot{margin-top:22px;text-align:center;font-size:13px;color:var(--muted)}
 
+/* Testimonials */
+.testimonials{grid-column:span 6;padding:30px}
+.t-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.t-head .label{margin-bottom:6px}
+.t-sub{color:var(--muted);font-size:15px}
+.t-head .links-inline{margin-top:0}
+.quotes{columns:3 280px;column-gap:16px}
+.quote{break-inside:avoid;margin:0 0 16px;padding:20px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--a1) 5%,transparent)}
+.quote blockquote p{font-size:15px;line-height:1.6}
+.quote blockquote p::before{content:"\201C";color:var(--a1);font-weight:700;margin-right:2px}
+.quote blockquote p::after{content:"\201D";color:var(--a1);font-weight:700;margin-left:2px}
+.quote blockquote[dir="rtl"] p{font-size:17px}
+.quote figcaption{margin-top:14px;display:grid;gap:1px;font-size:14px}
+.quote figcaption span{color:var(--muted);font-size:13px}
+.quote figcaption b span{color:inherit}
+.quote figcaption em{font-style:normal;font-size:12px;color:var(--a2);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.note a{color:var(--a2);font-weight:600}
+.note a:hover{text-decoration:underline}
+
 /* Reveal */
 .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
 .reveal.in{opacity:1;transform:none}
@@ -166,7 +185,7 @@ img{display:block;max-width:100%;height:auto}
   .now,.reviews{grid-column:span 2}
   .offer{grid-column:span 4}
   .step{grid-column:span 4}
-  .timeline,.side,.half,.cta{grid-column:span 4}
+  .timeline,.side,.half,.cta,.testimonials{grid-column:span 4}
   .side{flex-direction:row}
   .stat{grid-column:span 2;min-height:120px}
   .stat.countries{grid-column:span 4}
@@ -177,7 +196,8 @@ img{display:block;max-width:100%;height:auto}
 @media (max-width:640px){
   .wrap{padding:16px 16px 40px}
   .bento{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  .hero,.now,.reviews,.offer,.step,.timeline,.side,.half,.cta{grid-column:span 2}
+  .hero,.now,.reviews,.offer,.step,.timeline,.side,.half,.cta,.testimonials{grid-column:span 2}
+  .testimonials{padding:22px}
   .stat{grid-column:span 1}
   .stat.countries{grid-column:span 2}
   .hero{grid-template-columns:1fr;padding:24px;gap:20px}
